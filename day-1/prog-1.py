@@ -9,4 +9,3 @@ def find_vowels(s):
     return count
 s = input()
 print(find_vowels(s))
-    
