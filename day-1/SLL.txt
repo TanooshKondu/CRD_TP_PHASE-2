@@ -1,0 +1,5 @@
+#drawbacks of Linked Lists
+
+sortage of arrays performance
+lack of backward traversing
+relatively insuffisiet access time
