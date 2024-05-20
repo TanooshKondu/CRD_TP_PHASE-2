@@ -79,35 +79,35 @@ class Box:
     def __init__(self, data):
         self.data = data 
         self.next = None
- 
+        
 def printLinkedList(curr):
     while curr != None:
         print(curr.data, end = " --> ")
         curr = curr.next 
     print()
- 
+    
 def insertAtTailNode(head, ele):
     temp = Box(ele) 
     if head == None:
         return temp
     tail = head 
- 
+
     while tail.next != None:
         tail = tail.next 
     tail.next = temp
     return head 
- 
+
 def insertAtBeginning(head, ele):
     temp = Box(ele)
     if head == None:
         return temp 
     temp.next = head 
     return temp
- 
+
 def insertAtSpecificPosition(head, position, ele):
     if position == 0:
         return insertAtBeginning(head, ele)
- 
+
     temp = Box(ele)
     currentIndex = 0 
     currentNode = head 
