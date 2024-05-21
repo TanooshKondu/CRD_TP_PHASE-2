@@ -65,6 +65,23 @@ def deleteHeadNodeInLinkedList(head):
     head.next = None
     return secondNode
 ###
+#dele node at specific pos
+def deleteNodeAtSpecificPosition(head,position):
+    if position == 0:
+        return deleteHeadNodeInLinkedList(head)
+    
+    currentIndex = 0
+    currentNode = head
+    while currentIndex != position - 1:
+        currentIndex += 1
+        currentNode = currentNode.next
+        
+    nodeToBeDeleted = currentNode.next
+    currentNode.next = nodeToBeDeleted.next
+    nodeToBeDeleted.next = None
+    return head
+
+###
 head = None
 nums = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 for ele in nums:
@@ -77,6 +94,8 @@ head = deleteTailNode(head)
 printLinkedList(head)#prints deletion of tail node
 head = deleteHeadNodeInLinkedList(head)
 printLinkedList(head)#prints deletion at head node
+head = deleteNodeAtSpecificPosition(head, 6)
+printLinkedList(head)#prints delete node at specific pos
 # n = int(input())
 # for i in range(n):
 #     ele = int(input())
