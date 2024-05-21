@@ -1,5 +1,6 @@
 #https://pastebin.com/ZG1AbunX
 #Array implementation of Queues
+#Leetcode(994)
 def enQueue(Q, ele):
     Q.append(ele)
     print(ele, " enqueued successfully")
