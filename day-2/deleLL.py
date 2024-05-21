@@ -70,13 +70,13 @@ nums = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 for ele in nums:
     head = insertAtBeginning(head, ele)
 
-printLinkedList(head)
+printLinkedList(head)#prints linked list
 head = insertAtSpecificPosition(head, 5, 1899)
-printLinkedList(head)
+printLinkedList(head)#prints new inserted ele linked list
 head = deleteTailNode(head)
-printLinkedList(head)
+printLinkedList(head)#prints deletion of tail node
 head = deleteHeadNodeInLinkedList(head)
-printLinkedList(head)
+printLinkedList(head)#prints deletion at head node
 # n = int(input())
 # for i in range(n):
 #     ele = int(input())
