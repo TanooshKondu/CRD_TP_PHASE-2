@@ -1,4 +1,5 @@
 #<!---Sir's code--!>
+#https://pastebin.com/6PW7zNfz
 #deletion of linked lists
 
 class Box:
