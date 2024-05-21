@@ -1,4 +1,5 @@
 #https://pastebin.com/9ZZ7vvgc
+# Array implementation of stack
 
 def push(stack, ele):
     stack.insert(0, ele)
