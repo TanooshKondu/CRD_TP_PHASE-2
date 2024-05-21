@@ -1,5 +1,5 @@
 #https://pastebin.com/NCNAErBB
-#Array implementation of Queues using push, pop
+#Linked List implementation of stack using push, pop
 class Box:
     def __init__(self, data):
         self.data = data 
