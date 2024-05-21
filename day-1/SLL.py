@@ -73,7 +73,8 @@ printLinkedList(head)
 
 
 
-###<!-------Sir Code--------!>
+###<!-------Sir's Code--------!>
+# insertion of ele in linked list
 
 class Box:
     def __init__(self, data):
