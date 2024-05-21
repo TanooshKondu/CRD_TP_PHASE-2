@@ -1,5 +1,4 @@
 #finding next greater element
-
 def findNextGreaterElement(nums):
     stack = []
     n = len(nums)
