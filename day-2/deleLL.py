@@ -56,6 +56,15 @@ def deleteTailNode(head):
     return head
 
 ###
+
+#delete head node
+def deleteHeadNodeInLinkedList(head):
+    if head == None:
+        return None
+    secondNode = head.next
+    head.next = None
+    return secondNode
+###
 head = None
 nums = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 for ele in nums:
@@ -64,7 +73,10 @@ for ele in nums:
 printLinkedList(head)
 head = insertAtSpecificPosition(head, 5, 1899)
 printLinkedList(head)
-
+head = deleteTailNode(head)
+printLinkedList(head)
+head = deleteHeadNodeInLinkedList(head)
+printLinkedList(head)
 # n = int(input())
 # for i in range(n):
 #     ele = int(input())
