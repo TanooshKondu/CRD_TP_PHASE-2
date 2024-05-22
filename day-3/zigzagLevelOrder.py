@@ -1,32 +1,17 @@
 #https://pastebin.com/mXprcNB0
-#leetcode(103)
+
 class Box:
     def __init__(self, data):
         self.data = data 
         self.left = None 
         self.right = None 
 
-def printInOrderTraversal(root):
-    if root == None:
-        return 
-    printInOrderTraversal(root.left)
-    print(root.data, end = " ")
-    printInOrderTraversal(root.right)
-
-
-def printPreOrderTraversal(root):
-    if root == None:
-        return 
-    print(root.data, end = " ")
-    printPreOrderTraversal(root.left)
-    printPreOrderTraversal(root.right)    
-
-
 def levelOrderTraversal(root):
     if root == None:
-        return 
+        return []
     result = []
     Q = [root]
+    level = 0
     while len(Q) > 0:
         n = len(Q)
         subResult = []
@@ -41,6 +26,9 @@ def levelOrderTraversal(root):
             # step - 4
             if currNode.right != None:
                 Q.append(currNode.right)
+        if level % 2 == 1:
+            subResult = subResult[::-1]
+        level += 1
         result.append(subResult)
     print(result)
 
