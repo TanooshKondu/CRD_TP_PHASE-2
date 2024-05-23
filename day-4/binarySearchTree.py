@@ -17,7 +17,7 @@
 #         return root
 
 #<<<<<<<<-----Delete BST------>>>>>>>>>>
-#leetcode 450
+#leetcode 450, 700
 #https://pastebin.com/tBYc8fJb
 
 def findInorderPredessor(root):
