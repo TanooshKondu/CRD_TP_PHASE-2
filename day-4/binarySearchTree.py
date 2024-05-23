@@ -136,7 +136,7 @@ class Solution:
         self.collectInorder(root.left, arr)
         arr.append(root.val)
         self.collectInorder(root.right, arr)
- 
+        
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
         arr = []
         self.collectInorder(root, arr)
